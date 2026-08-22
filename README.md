@@ -1092,6 +1092,34 @@ Intelligent • Explainable • Action-Oriented
 </div>
 
 ---
+## 📂 Project Resources
+
+> Access the complete project resources, demo materials, documentation, screenshots, and supporting files.
+
+<div align="center">
+
+<a href="https://drive.google.com/drive/folders/1T3ek6FRcEbD4OdZ18DG1G9hD37aETPwl" target="_blank">
+  <img src="https://img.shields.io/badge/📁%20Google%20Drive-Project%20Resources-4285F4?style=for-the-badge&logo=google-drive&logoColor=white" alt="Google Drive">
+</a>
+
+</div>
+
+### 📦 What's Inside
+
+* 🎥 Demo / Presentation Videos
+* 🖼️ Project Screenshots
+* 📄 Documentation
+* 📊 Presentation Materials
+* 🧪 Testing & Demo Assets
+* 📁 Additional Project Resources
+
+<div align="center">
+
+**🔗 [Open Project Resources on Google Drive](https://drive.google.com/drive/folders/1T3ek6FRcEbD4OdZ18DG1G9hD37aETPwl)**
+
+</div>
+
+---
 
 # 📄 License
 
