@@ -1061,6 +1061,37 @@ Make your changes, test them, and open a pull request.
 | 💻 Team Member | Mohan Kumar       |
 
 ---
+🌐 Live Prototype
+
+<div align="center">
+
+🚀 Experience Dayflow AI
+
+Explore the working prototype and experience the HR management platform in action.
+
+<br>
+
+<a href="https://dayflow-ai.ai.studio">
+
+<img src="https://img.shields.io/badge/🚀%20OPEN%20LIVE%20PROTOTYPE-Dayflow%20AI-2563EB?style=for-the-badge" alt="Open Dayflow AI Prototype">
+
+</a>
+
+<br><br>
+
+🔗 https://dayflow-ai.ai.studio
+
+</div>
+
+<div align="center">
+
+Dayflow AI — Workforce Risk & HR Intelligence
+
+Intelligent • Explainable • Action-Oriented
+
+</div>
+
+---
 
 # 📄 License
 
