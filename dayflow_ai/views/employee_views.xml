@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Employee Form View Inheritance -->
+    <record id="view_employee_form_dayflow_inherit" model="ir.ui.view">
+        <field name="name">hr.employee.form.dayflow.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.view_employee_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='button_box']" position="inside">
+                <button name="action_recalculate_risk" type="object" class="oe_stat_button" icon="fa-heartbeat">
+                    <div class="o_stat_info">
+                        <span class="o_stat_value"><field name="risk_score"/>/100</span>
+                        <span class="o_stat_text">Risk Score (<field name="risk_level"/>)</span>
+                    </div>
+                </button>
+                <button name="action_generate_payslip_report" type="object" class="oe_stat_button" icon="fa-file-text-o">
+                    <div class="o_stat_info">
+                        <span class="o_stat_value"><field name="monthly_wage" widget="monetary"/></span>
+                        <span class="o_stat_text">Salary Slip</span>
+                    </div>
+                </button>
+            </xpath>
+
+            <xpath expr="//page[@name='public']" position="before">
+                <page name="dayflow_intelligence" string="Dayflow Workforce Intelligence">
+                    <group>
+                        <group string="AI Workforce Risk Assessment">
+                            <field name="risk_score" widget="progressbar"/>
+                            <field name="risk_level" widget="badge"
+                                   decoration-success="risk_level == 'low'"
+                                   decoration-warning="risk_level == 'medium'"
+                                   decoration-danger="risk_level == 'high'"/>
+                            <field name="attendance_trend" widget="badge"
+                                   decoration-success="attendance_trend == 'improving'"
+                                   decoration-muted="attendance_trend == 'stable'"
+                                   decoration-danger="attendance_trend == 'declining'"/>
+                        </group>
+                        <group string="30-Day Attendance Metrics">
+                            <field name="attendance_rate" widget="percentage"/>
+                            <field name="absence_count"/>
+                            <field name="late_checkin_count"/>
+                            <field name="leave_count"/>
+                        </group>
+                    </group>
+                    <group string="Identified Risk Factors &amp; Empirical Reasons">
+                        <field name="risk_reasons" nolabel="1" placeholder="Risk reasons calculated automatically by Dayflow Risk Engine..."/>
+                    </group>
+                    <group string="Prescriptive HR Action Recommendation">
+                        <field name="risk_recommendation" nolabel="1" placeholder="Actionable steps for HR manager..."/>
+                    </group>
+                </page>
+
+                <page name="dayflow_payroll" string="Dayflow Payroll Structure">
+                    <group>
+                        <group string="Base Compensation">
+                            <field name="currency_id" invisible="1"/>
+                            <field name="monthly_wage" widget="monetary"/>
+                            <field name="hra_allowance" widget="monetary"/>
+                            <field name="special_allowance" widget="monetary"/>
+                        </group>
+                        <group string="Statutory Deductions">
+                            <field name="provident_fund_rate"/>
+                            <field name="tax_deduction_rate"/>
+                        </group>
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <!-- Employee Kanban View Inheritance for Risk Highlighting -->
+    <record id="hr_kanban_view_dayflow_inherit" model="ir.ui.view">
+        <field name="name">hr.employee.kanban.dayflow.inherit</field>
+        <field name="model">hr.employee</field>
+        <field name="inherit_id" ref="hr.hr_kanban_view_employees"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[hasclass('oe_kanban_details')]" position="inside">
+                <div class="mt-2">
+                    <span t-if="record.risk_score.raw_value &gt;= 70" class="badge badge-pill badge-danger text-white">
+                        Risk: <field name="risk_score"/> [HIGH]
+                    </span>
+                    <span t-elif="record.risk_score.raw_value &gt;= 40" class="badge badge-pill badge-warning text-dark">
+                        Risk: <field name="risk_score"/> [MED]
+                    </span>
+                    <span t-else="" class="badge badge-pill badge-success text-white">
+                        Risk: <field name="risk_score"/> [LOW]
+                    </span>
+                    <span class="ml-1 text-muted small">Att: <field name="attendance_rate"/>%</span>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

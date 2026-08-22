@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_dayflow_workforce_alert_tree" model="ir.ui.view">
+        <field name="name">dayflow.workforce.alert.tree</field>
+        <field name="model">dayflow.workforce.alert</field>
+        <field name="arch" type="xml">
+            <tree string="Proactive Workforce Alerts" decoration-danger="severity in ('high', 'critical')" decoration-warning="severity == 'medium'" decoration-muted="is_read">
+                <field name="create_date" string="Detected At"/>
+                <field name="title"/>
+                <field name="alert_type" widget="badge"/>
+                <field name="severity" widget="badge"
+                       decoration-success="severity == 'low'"
+                       decoration-warning="severity == 'medium'"
+                       decoration-danger="severity in ('high', 'critical')"/>
+                <field name="employee_id"/>
+                <field name="department_id"/>
+                <field name="is_read"/>
+                <button name="action_mark_read" type="object" string="Mark Read" icon="fa-check" invisible="is_read"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_dayflow_workforce_alert_form" model="ir.ui.view">
+        <field name="name">dayflow.workforce.alert.form</field>
+        <field name="model">dayflow.workforce.alert</field>
+        <field name="arch" type="xml">
+            <form string="Proactive Alert">
+                <header>
+                    <button name="action_mark_read" string="Mark as Read" type="object" class="oe_highlight" invisible="is_read"/>
+                    <button name="action_dismiss" string="Dismiss Alert" type="object" invisible="is_dismissed"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <h1><field name="title"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="alert_type"/>
+                            <field name="severity" widget="badge"/>
+                            <field name="create_date"/>
+                        </group>
+                        <group>
+                            <field name="employee_id"/>
+                            <field name="department_id"/>
+                            <field name="is_read"/>
+                        </group>
+                    </group>
+                    <group string="Root Cause Diagnosis">
+                        <field name="reason" nolabel="1"/>
+                    </group>
+                    <group string="Prescriptive Recommended Action">
+                        <field name="recommended_action" nolabel="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_dayflow_workforce_alert_filter" model="ir.ui.view">
+        <field name="name">dayflow.workforce.alert.filter</field>
+        <field name="model">dayflow.workforce.alert</field>
+        <field name="arch" type="xml">
+            <search string="Search Alerts">
+                <field name="title"/>
+                <field name="employee_id"/>
+                <field name="department_id"/>
+                <filter string="Unread Alerts" name="unread" domain="[('is_read', '=', False)]"/>
+                <filter string="Critical &amp; High Priority" name="urgent" domain="[('severity', 'in', ['high', 'critical'])]"/>
+            </search>
+        </field>
+    </record>
+</odoo>

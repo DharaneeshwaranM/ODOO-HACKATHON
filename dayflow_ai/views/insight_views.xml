@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_dayflow_hr_insight_tree" model="ir.ui.view">
+        <field name="name">dayflow.hr.insight.tree</field>
+        <field name="model">dayflow.hr.insight</field>
+        <field name="arch" type="xml">
+            <tree string="AI HR Insights" decoration-danger="impact_scope == 'critical'" decoration-warning="impact_scope == 'warning'" decoration-success="impact_scope == 'positive'">
+                <field name="headline"/>
+                <field name="category" widget="badge"/>
+                <field name="impact_scope" widget="badge"/>
+                <field name="metric_evidence"/>
+                <field name="department_id"/>
+                <field name="confidence_score" widget="progressbar"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_dayflow_hr_insight_form" model="ir.ui.view">
+        <field name="name">dayflow.hr.insight.form</field>
+        <field name="model">dayflow.hr.insight</field>
+        <field name="arch" type="xml">
+            <form string="AI HR Insight">
+                <sheet>
+                    <div class="oe_title">
+                        <h2><field name="headline"/></h2>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="category"/>
+                            <field name="impact_scope" widget="badge"/>
+                            <field name="department_id"/>
+                        </group>
+                        <group>
+                            <field name="metric_evidence"/>
+                            <field name="confidence_score" widget="progressbar"/>
+                            <field name="is_active"/>
+                        </group>
+                    </group>
+                    <group string="Detailed Insight Narrative">
+                        <field name="description" nolabel="1"/>
+                    </group>
+                    <group string="Actionable HR Recommendation">
+                        <field name="recommended_action" nolabel="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+</odoo>

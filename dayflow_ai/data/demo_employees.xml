@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Low Risk Employees (Engineering) -->
+        <record id="demo_emp_alex_chen" model="hr.employee">
+            <field name="name">Alex Chen</field>
+            <field name="employee_badge_id">EMP-1001</field>
+            <field name="work_email">alex.chen@dayflow.demo</field>
+            <field name="job_title">Principal Architect</field>
+            <field name="department_id" ref="demo_dept_engineering"/>
+            <field name="risk_score">12</field>
+            <field name="attendance_rate">98.5</field>
+            <field name="absence_count">0</field>
+            <field name="late_checkin_count">0</field>
+            <field name="attendance_trend">stable</field>
+            <field name="monthly_wage">8500.0</field>
+            <field name="hra_allowance">1700.0</field>
+            <field name="special_allowance">1200.0</field>
+            <field name="is_email_verified">True</field>
+        </record>
+
+        <record id="demo_emp_sarah_jenkins" model="hr.employee">
+            <field name="name">Sarah Jenkins</field>
+            <field name="employee_badge_id">EMP-1002</field>
+            <field name="work_email">sarah.jenkins@dayflow.demo</field>
+            <field name="job_title">Senior Backend Engineer</field>
+            <field name="department_id" ref="demo_dept_engineering"/>
+            <field name="risk_score">18</field>
+            <field name="attendance_rate">95.0</field>
+            <field name="absence_count">1</field>
+            <field name="late_checkin_count">1</field>
+            <field name="attendance_trend">stable</field>
+            <field name="monthly_wage">6800.0</field>
+            <field name="hra_allowance">1360.0</field>
+            <field name="special_allowance">900.0</field>
+            <field name="is_email_verified">True</field>
+        </record>
+
+        <!-- High Risk Employee: Marcus Vance (Engineering) -->
+        <record id="demo_emp_marcus_vance" model="hr.employee">
+            <field name="name">Marcus Vance</field>
+            <field name="employee_badge_id">EMP-1003</field>
+            <field name="work_email">marcus.vance@dayflow.demo</field>
+            <field name="job_title">DevOps Engineer</field>
+            <field name="department_id" ref="demo_dept_engineering"/>
+            <field name="risk_score">84</field>
+            <field name="attendance_rate">68.2</field>
+            <field name="absence_count">7</field>
+            <field name="late_checkin_count">6</field>
+            <field name="leave_count">4</field>
+            <field name="attendance_trend">declining</field>
+            <field name="risk_reasons">• Severe attendance deficit (68.2% vs 90% benchmark)&#10;• High unscheduled absences (7 days in 30 days)&#10;• Chronic late arrivals (6 occurrences)&#10;• Consecutive declining weekly attendance velocity</field>
+            <field name="risk_recommendation">Priority 1: Schedule an informal 1-on-1 HR check-in to evaluate workload, burnout, and shift scheduling bottlenecks.</field>
+            <field name="monthly_wage">6200.0</field>
+            <field name="is_email_verified">True</field>
+        </record>
+
+        <!-- Sales Department Employees (Constrained department scenario) -->
+        <record id="demo_emp_john_smith" model="hr.employee">
+            <field name="name">John Smith</field>
+            <field name="employee_badge_id">EMP-1004</field>
+            <field name="work_email">john.smith@dayflow.demo</field>
+            <field name="job_title">Enterprise Account Executive</field>
+            <field name="department_id" ref="demo_dept_sales"/>
+            <field name="risk_score">82</field>
+            <field name="attendance_rate">71.0</field>
+            <field name="absence_count">6</field>
+            <field name="late_checkin_count">8</field>
+            <field name="attendance_trend">declining</field>
+            <field name="risk_reasons">• Low attendance (71.0% vs company average 91%)&#10;• High unscheduled absence pattern (6 days)&#10;• Chronic late arrival pattern (8 late check-ins)&#10;• Declining weekly attendance trend</field>
+            <field name="risk_recommendation">Schedule HR check-in and review territory quota pressure.</field>
+            <field name="monthly_wage">5500.0</field>
+            <field name="is_email_verified">True</field>
+        </record>
+
+        <record id="demo_emp_priya_sharma" model="hr.employee">
+            <field name="name">Priya Sharma</field>
+            <field name="employee_badge_id">EMP-1005</field>
+            <field name="work_email">priya.sharma@dayflow.demo</field>
+            <field name="job_title">Senior Sales Manager</field>
+            <field name="department_id" ref="demo_dept_sales"/>
+            <field name="risk_score">76</field>
+            <field name="attendance_rate">74.5</field>
+            <field name="absence_count">5</field>
+            <field name="late_checkin_count">5</field>
+            <field name="attendance_trend">declining</field>
+            <field name="risk_reasons">• Sub-optimal attendance rate (74.5%)&#10;• Frequent unscheduled absences&#10;• Recurring late check-ins</field>
+            <field name="risk_recommendation">Review sales team coverage and travel fatigue.</field>
+            <field name="monthly_wage">7200.0</field>
+            <field name="is_email_verified">True</field>
+        </record>
+
+        <record id="demo_emp_david_kim" model="hr.employee">
+            <field name="name">David Kim</field>
+            <field name="employee_badge_id">EMP-1006</field>
+            <field name="work_email">david.kim@dayflow.demo</field>
+            <field name="job_title">Sales Development Rep</field>
+            <field name="department_id" ref="demo_dept_sales"/>
+            <field name="risk_score">48</field>
+            <field name="attendance_rate">83.0</field>
+            <field name="absence_count">3</field>
+            <field name="late_checkin_count">2</field>
+            <field name="attendance_trend">stable</field>
+            <field name="monthly_wage">4200.0</field>
+            <field name="is_email_verified">True</field>
+        </record>
+
+        <!-- Marketing Department -->
+        <record id="demo_emp_elena_rostova" model="hr.employee">
+            <field name="name">Elena Rostova</field>
+            <field name="employee_badge_id">EMP-1007</field>
+            <field name="work_email">elena.rostova@dayflow.demo</field>
+            <field name="job_title">Content Strategist</field>
+            <field name="department_id" ref="demo_dept_marketing"/>
+            <field name="risk_score">72</field>
+            <field name="attendance_rate">76.0</field>
+            <field name="absence_count">4</field>
+            <field name="late_checkin_count">4</field>
+            <field name="leave_count">3</field>
+            <field name="attendance_trend">declining</field>
+            <field name="risk_reasons">• Elevated leave frequency (3 requests in 90 days)&#10;• Attendance rate below marketing team target</field>
+            <field name="risk_recommendation">Assess campaign deadline overload.</field>
+            <field name="monthly_wage">4800.0</field>
+            <field name="is_email_verified">True</field>
+        </record>
+
+        <!-- HR & Finance Members -->
+        <record id="demo_emp_clara_oswald" model="hr.employee">
+            <field name="name">Clara Oswald</field>
+            <field name="employee_badge_id">EMP-1008</field>
+            <field name="work_email">clara.oswald@dayflow.demo</field>
+            <field name="job_title">People Operations Lead</field>
+            <field name="department_id" ref="demo_dept_hr"/>
+            <field name="risk_score">10</field>
+            <field name="attendance_rate">99.0</field>
+            <field name="absence_count">0</field>
+            <field name="monthly_wage">6500.0</field>
+            <field name="is_email_verified">True</field>
+        </record>
+
+        <record id="demo_emp_james_wilson" model="hr.employee">
+            <field name="name">James Wilson</field>
+            <field name="employee_badge_id">EMP-1009</field>
+            <field name="work_email">james.wilson@dayflow.demo</field>
+            <field name="job_title">Financial Controller</field>
+            <field name="department_id" ref="demo_dept_finance"/>
+            <field name="risk_score">15</field>
+            <field name="attendance_rate">96.0</field>
+            <field name="absence_count">1</field>
+            <field name="monthly_wage">7500.0</field>
+            <field name="is_email_verified">True</field>
+        </record>
+    </data>
+</odoo>
