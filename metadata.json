@@ -1,0 +1,6 @@
+{
+  "name": "DAYFLOW AI - Workforce Risk & HR Intelligence for Odoo 17",
+  "description": "Predict workforce risks, automate HR decisions, detect leave impacts, and improve productivity with explainable AI HR Copilot for Odoo 17.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
