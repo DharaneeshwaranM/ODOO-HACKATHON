@@ -1041,18 +1041,15 @@ Future
 
 # 👥 Team
 
-**Team Name:** `YOUR TEAM NAME`
+**Team Name:** `BYTE BUILDER`
 
 **Project:** `DAYFLOW AI`
 
-**Hackathon:** `YOUR HACKATHON NAME`
+**Hackathon:** `Odoo x NMIT Bangalore Hackathon 2026`
 
 ## Team Members
 
-* `Member 1`
-* `Member 2`
-* `Member 3`
-* `Member 4`
+* `DHARANEESHWARAN.M`
 
 ---
 
