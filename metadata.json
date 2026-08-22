@@ -1,0 +1,8 @@
+{
+  "name": "Dayflow AI — HR Management System",
+  "description": "Enterprise AI-powered Human Resource Management System featuring performance, conduct & compliance warnings, explainable risk intelligence, Performance Improvement Plans (PIP), Smart HR Action Center, absence monitoring, and role-based workflows.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
