@@ -1,6 +1,8 @@
 {
-  "name": "DAYFLOW AI - Workforce Risk & HR Intelligence for Odoo 17",
-  "description": "Predict workforce risks, automate HR decisions, detect leave impacts, and improve productivity with explainable AI HR Copilot for Odoo 17.",
+  "name": "Dayflow AI — HR Management System",
+  "description": "Enterprise AI-powered Human Resource Management System featuring performance, conduct & compliance warnings, explainable risk intelligence, Performance Improvement Plans (PIP), Smart HR Action Center, absence monitoring, and role-based workflows.",
   "requestFramePermissions": [],
-  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
 }

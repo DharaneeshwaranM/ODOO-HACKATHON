@@ -1,8 +1,0 @@
-id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_dayflow_workforce_risk_hr,dayflow.workforce.risk.hr,model_dayflow_workforce_risk,group_dayflow_hr,1,1,1,1
-access_dayflow_workforce_risk_employee,dayflow.workforce.risk.employee,model_dayflow_workforce_risk,group_dayflow_employee,0,0,0,0
-access_dayflow_workforce_alert_hr,dayflow.workforce.alert.hr,model_dayflow_workforce_alert,group_dayflow_hr,1,1,1,1
-access_dayflow_workforce_alert_employee,dayflow.workforce.alert.employee,model_dayflow_workforce_alert,group_dayflow_employee,0,0,0,0
-access_dayflow_hr_insight_hr,dayflow.hr.insight.hr,model_dayflow_hr_insight,group_dayflow_hr,1,1,1,1
-access_dayflow_hr_insight_employee,dayflow.hr.insight.employee,model_dayflow_hr_insight,group_dayflow_employee,0,0,0,0
-access_dayflow_attendance_analysis_hr,dayflow.attendance.analysis.hr,model_dayflow_attendance_analysis,group_dayflow_hr,1,0,0,0
