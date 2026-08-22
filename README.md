@@ -566,49 +566,68 @@ Sensitive actions require authorized HR review and approval.
 # 📁 Project Structure
 
 ```text
-dayflow_ai/
+dayflow-ai-—-hr-management-system/
 │
-├── __init__.py
-├── __manifest__.py
+├── metadata.json
+├── package.json
+├── server.ts
+├── index.html
+├── vite.config.ts
+├── tsconfig.json
+├── bun.lock
+├── .env.example
+├── .gitignore
+├── README.md
 │
-├── models/
-│   ├── employee.py
-│   ├── attendance.py
-│   ├── leave.py
-│   ├── department.py
-│   ├── warning.py
-│   ├── performance.py
-│   ├── salary_deduction.py
-│   ├── action_center.py
-│   └── audit.py
+├── assets/
+│   └── .aistudio/
+│       └── .gitignore
 │
-├── views/
-│   ├── dashboard_views.xml
-│   ├── employee_views.xml
-│   ├── attendance_views.xml
-│   ├── leave_views.xml
-│   ├── department_views.xml
-│   ├── warning_views.xml
-│   ├── performance_views.xml
-│   ├── deduction_views.xml
-│   └── action_center_views.xml
-│
-├── security/
-│   ├── security.xml
-│   └── ir.model.access.csv
-│
-├── data/
-│   ├── mail_templates.xml
-│   └── configuration.xml
-│
-├── static/
-│   └── src/
-│       ├── js/
-│       ├── css/
-│       └── xml/
-│
-└── README.md
-```
+└── src/
+    ├── main.tsx
+    ├── App.tsx
+    ├── api.ts
+    ├── types.ts
+    ├── index.css
+    │
+    ├── context/
+    │   └── AuthContext.tsx
+    │
+    └── components/
+        │
+        ├── auth/
+        │   └── LoginPage.tsx
+        │
+        ├── common/
+        │   ├── Header.tsx
+        │   ├── Sidebar.tsx
+        │   └── EmailModal.tsx
+        │
+        ├── hr/
+        │   ├── HRDashboard.tsx
+        │   ├── EmployeeManagement.tsx
+        │   ├── OrgChart.tsx
+        │   ├── DepartmentManagement.tsx
+        │   ├── AttendanceManagement.tsx
+        │   ├── LeaveManagement.tsx
+        │   ├── AbsenceMonitoring.tsx
+        │   ├── SalaryDeductionRequests.tsx
+        │   ├── WorkforceIntelligence.tsx
+        │   ├── HRNotificationCenter.tsx
+        │   ├── AuditTrailView.tsx
+        │   ├── HRProfile.tsx
+        │   ├── SmartActionCenter.tsx
+        │   ├── WarningManagement.tsx
+        │   └── Employee360Modal.tsx
+        │
+        └── employee/
+            ├── EmployeeDashboard.tsx
+            ├── EmployeeAttendance.tsx
+            ├── EmployeeLeaves.tsx
+            ├── EmployeeAbsenceDeductions.tsx
+            ├── EmployeeProfile.tsx
+            ├── EmployeeNotifications.tsx
+            └── EmployeePerformanceWarnings.tsx```
 
 ---
 
