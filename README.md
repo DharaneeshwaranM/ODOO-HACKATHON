@@ -2,267 +2,314 @@
 
 # 🚀 Dayflow AI
 
-### Human Resource Management System
+### Workforce Risk & HR Intelligence Platform
 
 **Intelligent • Explainable • Action-Oriented HR**
 
-[![Odoo](https://img.shields.io/badge/Odoo-17.0-714B67?style=for-the-badge&logo=odoo&logoColor=white)](#)
-[![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)](#)
-[![PostgreSQL](https://img.shields.io/badge/PostgreSQL-Database-336791?style=for-the-badge&logo=postgresql&logoColor=white)](#)
-[![OWL](https://img.shields.io/badge/OWL-Frontend-714B67?style=for-the-badge)](#)
-[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](#)
+<p>
+  <img src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React 19"/>
+  <img src="https://img.shields.io/badge/TypeScript-5.8-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"/>
+  <img src="https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite"/>
+  <img src="https://img.shields.io/badge/Express-4-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express"/>
+  <img src="https://img.shields.io/badge/Gemini_AI-Enabled-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Gemini AI"/>
+</p>
 
-**Built by Byte Builders for the Odoo Hackathon**
+<p>
+  <img src="https://img.shields.io/badge/HR-Management-2563EB?style=flat-square" alt="HR Management"/>
+  <img src="https://img.shields.io/badge/Risk-Intelligence-F97316?style=flat-square" alt="Risk Intelligence"/>
+  <img src="https://img.shields.io/badge/Human--in--the--Loop-✓-16A34A?style=flat-square" alt="Human in the Loop"/>
+  <img src="https://img.shields.io/badge/License-MIT-22C55E?style=flat-square" alt="MIT License"/>
+</p>
+
+**Built by Byte Builders**
 
 </div>
 
 ---
 
-## ✨ Overview
+## 📌 Overview
 
-**Dayflow AI** is a modern **Human Resource Management System** built on the Odoo HR ecosystem.
+**Dayflow AI** is a modern HR management and workforce intelligence platform designed to bring employee operations, workforce monitoring, explainable risk detection, and HR decision-making into one unified system.
 
-It brings employee management, attendance, leave, performance, workforce warnings, department health, HR actions, notifications, and auditability into one unified platform.
+Instead of simply storing HR information, Dayflow AI follows an action-oriented workflow:
 
-> **Observe → Analyze → Explain → Review → Act → Audit**
+```text
+Observe
+   ↓
+Analyze
+   ↓
+Detect
+   ↓
+Explain
+   ↓
+Recommend
+   ↓
+Review
+   ↓
+Approve
+   ↓
+Act
+   ↓
+Audit
+```
 
-Dayflow AI helps HR move from simply viewing HR data to taking **structured and explainable HR actions**.
+> **AI recommends. HR decides.**
+
+Sensitive HR decisions remain under authorized human review.
 
 ---
 
-## 🎯 The Problem
+## 🎯 Problem
 
-Traditional HR systems often keep important workforce information separated across different modules.
+Traditional HR systems often separate important workforce information across different screens and processes.
 
 HR teams may need to manually monitor:
 
-- 👥 Employee information
-- ⏱️ Attendance
-- 🏖️ Leave
-- 📉 Absence
-- 📈 Performance
-- 🏢 Department health
-- ⚠️ Employee warnings
-- 💰 Salary-related actions
-- 📋 Compliance
+* 👥 Employee information
+* ⏱️ Attendance
+* 🏖️ Leave
+* 📉 Absence
+* 📈 Performance
+* ⚠️ Employee warnings
+* 💰 Salary-related requests
+* 🏢 Department health
+* 📋 HR actions
+* 🔍 Workforce risks
 
-This makes it difficult to identify problems early and respond consistently.
+This makes it harder to identify workforce issues early and respond consistently.
 
 ---
 
 ## 💡 Our Solution
 
-Dayflow AI connects HR signals into a single workflow:
+Dayflow AI connects HR signals into a unified intelligence workflow.
 
 ```text
-┌─────────────────────────────────────────────┐
-│               EMPLOYEE DATA                 │
-│ Attendance • Leave • Performance • Conduct  │
-└──────────────────────┬──────────────────────┘
+┌────────────────────────────────────────────┐
+│              EMPLOYEE DATA                 │
+│ Attendance • Leave • Performance • Tasks   │
+└──────────────────────┬─────────────────────┘
                        ↓
-┌─────────────────────────────────────────────┐
-│            WORKFORCE ANALYSIS               │
-└──────────────────────┬──────────────────────┘
+┌────────────────────────────────────────────┐
+│          WORKFORCE INTELLIGENCE            │
+└──────────────────────┬─────────────────────┘
                        ↓
-┌─────────────────────────────────────────────┐
-│          PATTERN / ISSUE DETECTION          │
-└──────────────────────┬──────────────────────┘
+┌────────────────────────────────────────────┐
+│          RISK / ISSUE DETECTION            │
+└──────────────────────┬─────────────────────┘
                        ↓
-┌─────────────────────────────────────────────┐
-│          EXPLAINABLE HR WARNING             │
-└──────────────────────┬──────────────────────┘
+┌────────────────────────────────────────────┐
+│         EXPLAINABLE HR INSIGHT             │
+└──────────────────────┬─────────────────────┘
                        ↓
-┌─────────────────────────────────────────────┐
-│           SMART HR ACTION CENTER            │
-└──────────────────────┬──────────────────────┘
+┌────────────────────────────────────────────┐
+│          SMART ACTION CENTER               │
+└──────────────────────┬─────────────────────┘
                        ↓
-┌─────────────────────────────────────────────┐
-│                 HR REVIEW                   │
-└──────────────────────┬──────────────────────┘
+┌────────────────────────────────────────────┐
+│              HR REVIEW                     │
+└──────────────────────┬─────────────────────┘
                        ↓
-┌─────────────────────────────────────────────┐
-│            CONTROLLED HR ACTION             │
-└──────────────────────┬──────────────────────┘
+┌────────────────────────────────────────────┐
+│        CONTROLLED HR ACTION                │
+└──────────────────────┬─────────────────────┘
                        ↓
-┌─────────────────────────────────────────────┐
-│             NOTIFICATION + AUDIT            │
-└─────────────────────────────────────────────┘
+┌────────────────────────────────────────────┐
+│          NOTIFICATION + AUDIT              │
+└────────────────────────────────────────────┘
 ```
 
 ---
 
-# 🌟 Key Features
+# ✨ Features
 
-## 🔐 Authentication & Access Control
+## 🔐 Authentication & Role-Based Access
 
-- HR / Admin login
-- Employee login
-- Role-based dashboard access
-- Protected routes
-- Backend authorization
-- Secure logout
+* HR/Admin login
+* Employee login
+* Role-based dashboard access
+* Protected API routes
+* Session-based authentication
+* Secure logout
+* Employee data isolation
+
+---
 
 ## 👥 Employee Management
 
-HR can manage:
+HR administrators can manage:
 
-- Employee profiles
-- Employee ID
-- Department
-- Role
-- Reporting manager
-- Employee status
-- Employee search
-- Employee filtering
+* Employee profiles
+* Employee IDs
+* Departments
+* Job roles
+* Reporting managers
+* Employment status
+* Contact information
+* Profile photos
+* Employee search and filtering
 
-### Profile Editing Rules
+### Profile permissions
 
-**Employees can edit:**
-- 📧 Email
-- 📱 Contact number
-- 🖼️ Profile photo
+**Employees can update:**
 
-**Authorized HR users can edit:**
-- 👤 Name
-- 🆔 Employee ID
-- 🏢 Department
-- 💼 Role
+* Email
+* Contact number
+* Profile photo
+
+**HR/Admin can manage:**
+
+* Employee name
+* Employee ID
+* Department
+* Role
+* Employment status
 
 ---
 
 ## 📊 HR Dashboard
 
-The HR dashboard provides a centralized overview of the organization.
+A centralized dashboard provides workforce visibility through:
 
-### Key Metrics
-
-| Metric | Purpose |
-|---|---|
-| 👥 Total employees | Workforce overview |
-| 🟢 Present employees | Daily attendance |
-| 🔴 Absent employees | Absence monitoring |
-| 🏖️ Employees on leave | Leave overview |
-| 📈 Attendance rate | Workforce health |
-| 📋 Leave statistics | Leave analysis |
-| ⚠️ Active warnings | Risk monitoring |
-| 🎯 Pending HR actions | Action tracking |
-| 💰 Salary deduction approvals | Financial workflow |
-| 🏢 Department health | Department analysis |
+| Metric               | Purpose             |
+| -------------------- | ------------------- |
+| 👥 Total Employees   | Workforce overview  |
+| 🟢 Present           | Daily attendance    |
+| 🔴 Absent            | Absence monitoring  |
+| 🏖️ On Leave         | Leave overview      |
+| 📈 Attendance Rate   | Workforce health    |
+| ⚠️ Active Warnings   | Risk monitoring     |
+| 🎯 Pending Actions   | HR action tracking  |
+| 💰 Salary Requests   | Approval workflow   |
+| 🏢 Department Health | Department analysis |
 
 ---
 
 ## 👤 Employee Dashboard
 
-Employees can view:
+Employees can access their own:
 
-- Profile
-- Attendance
-- Working hours
-- Leave balance
-- Leave history
-- Warnings
-- Notifications
-- HR messages
-- Salary deduction status
-
-> Employees only access information they are authorized to view.
+* Profile
+* Attendance
+* Working hours
+* Leave balance
+* Leave history
+* Absence information
+* Performance information
+* Warnings
+* Notifications
+* HR messages
+* Salary deduction status
 
 ---
 
 # ⏱️ Attendance Management
 
-Track:
+Track employee attendance with:
 
-- Check-in
-- Check-out
-- Working hours
-- Late arrivals
-- Early departures
-- Absence
-- Attendance history
+* Check-in
+* Check-out
+* Working hours
+* Late arrivals
+* Early departures
+* Absence
+* Attendance history
+
+### Employee workflow
+
+```text
+CHECK IN
+   ↓
+WORKING
+   ↓
+CHECK OUT
+   ↓
+ATTENDANCE RECORD
+```
 
 ---
 
 # 🏖️ Leave Management
 
-### Employee
+### Employees
 
 Employees can:
 
-- Apply for leave
-- Select leave type
-- Select dates
-- Add reason
-- View leave balance
-- Track request status
-- View leave history
+* Apply for leave
+* Select leave type
+* Select dates
+* Provide a reason
+* View leave balance
+* Track request status
+* View leave history
 
 ### HR
 
 HR can:
 
-- Approve leave
-- Reject leave
-- Review leave history
-- Monitor leave usage
-- Analyze leave patterns
+* Review leave requests
+* Approve requests
+* Reject requests
+* Monitor leave usage
+* Analyze leave patterns
 
 ---
 
-# 🚨 Absence Limit Warning
+# 🚨 Absence Monitoring
 
-Dayflow AI monitors configured absence limits.
+Dayflow AI monitors configured absence policies.
 
-### Example
+Example:
 
 ```text
-Allowed Absence     12 Days
-Used Absence        14 Days
-────────────────────────────
-Exceeded             2 Days
+Allowed Absence       12 Days
+Used Absence          14 Days
+──────────────────────────────
+Exceeded               2 Days
 ```
 
-The system can generate warnings when an employee:
+The system can identify employees who:
 
-- Approaches the limit
-- Reaches the limit
-- Crosses the limit
+* Approach the configured threshold
+* Reach the threshold
+* Exceed the threshold
 
-### Notification Channels
+Warnings can appear through:
 
-- 🔔 Dashboard notification
-- 📧 Email
-- ⚠️ HR Action Center
+* 🔔 Dashboard notifications
+* 📧 Email workflows
+* ⚠️ Smart Action Center
 
 ---
 
-# 💰 HR-Approved Salary Deduction
+# 💰 Salary Deduction Workflow
 
-When an employee exceeds the configured absence limit, the system can calculate a **potential salary deduction**.
+When an absence policy is exceeded, Dayflow AI can calculate a **potential salary deduction request**.
 
 ```text
-Absence Limit Crossed
-        ↓
-Warning Generated
-        ↓
-Potential Deduction
-        ↓
-HR Approval Required
-        ↓
-     ┌───────┴───────┐
-     ↓               ↓
-  APPROVE          REJECT
+Absence Limit Exceeded
+          ↓
+    Warning Generated
+          ↓
+ Potential Deduction
+          ↓
+     HR Review
+          ↓
+     ┌────┴────┐
+     ↓         ↓
+  APPROVE    REJECT
+     ↓         ↓
+ Payroll     No Deduction
+ Workflow
      ↓
-Payroll Workflow
+ Employee Notification
      ↓
-Employee Notification
-     ↓
-Audit Trail
+    Audit Trail
 ```
 
-> ⚠️ **Salary is never automatically deducted. HR approval is mandatory.**
+> ⚠️ Salary-related actions require HR review and approval.
 
-### Example
+Example:
 
 ```text
 Monthly Salary       ₹30,000
@@ -277,48 +324,74 @@ Potential Deduction     ₹2,000
 
 # ⚠️ Employee Warning System
 
-Dayflow AI can monitor issues related to:
+Dayflow AI supports structured employee warnings across multiple categories.
 
 ### Attendance
-- Repeated late arrivals
-- Unauthorized absence
-- Attendance violations
+
+* Repeated late arrivals
+* Unauthorized absence
+* Attendance violations
 
 ### Work
-- Repeated missed deadlines
-- Incomplete work
-- Documented quality issues
-- KPI concerns
+
+* Missed deadlines
+* Incomplete work
+* Quality concerns
+* KPI concerns
 
 ### Conduct
-- Documented misconduct
-- Workplace policy violations
-- Repeated procedural violations
+
+* Documented misconduct
+* Workplace policy violations
+* Procedural violations
 
 ### Compliance
-- Company policy violations
-- Security/compliance issues
-- Mandatory procedure violations
+
+* Company policy violations
+* Security/compliance concerns
+* Mandatory procedure violations
+
+### Automated Detection
+
+Warnings can also be detected through:
+
+```text
+Employee Data
+     ↓
+Rule / Pattern Analysis
+     ↓
+Potential Issue
+     ↓
+Explainable Warning
+     ↓
+HR Review
+```
 
 ---
 
-# 📈 Performance Improvement Plan
+# 📈 Performance Management
 
-HR / authorized managers can create a **Performance Improvement Plan (PIP)** for employees requiring structured improvement.
+Dayflow AI supports structured performance reviews and improvement workflows.
 
-### Track
+Track:
 
-- Goals
-- KPIs
-- Expected improvements
-- Review dates
-- Manager
-- HR owner
-- Employee response
-- Progress
-- Final outcome
+* Goals
+* KPIs
+* Performance metrics
+* Areas for improvement
+* Manager feedback
+* Review dates
+* Employee responses
+* Progress
+* Final outcomes
 
-### Lifecycle
+---
+
+# 🎯 Performance Improvement Plans
+
+HR/Admin users can create structured **Performance Improvement Plans (PIPs)**.
+
+### PIP lifecycle
 
 ```text
 DRAFT
@@ -327,74 +400,113 @@ ACTIVE
   ↓
 PROGRESS REVIEW
   ↓
-COMPLETED / EXTENDED / UNSUCCESSFUL
+COMPLETED
+  │
+  ├── EXTENDED
+  │
+  └── UNSUCCESSFUL
 ```
+
+PIPs can track:
+
+* Goals
+* KPIs
+* Expected improvements
+* Review dates
+* HR owner
+* Manager
+* Employee response
+* Progress
+* Outcome
+
+---
+
+# 🧠 Workforce Intelligence
+
+Dayflow AI combines workforce information to produce explainable insights.
+
+The platform can analyze:
+
+* Attendance
+* Absence
+* Leave activity
+* Performance
+* Warnings
+* Department health
+* Employee risk indicators
+
+Gemini AI can be used for workforce analysis and performance-related insights when `GEMINI_API_KEY` is configured.
 
 ---
 
 # 🎯 Smart HR Action Center
 
-A centralized command center showing everything that requires HR attention.
+The **Smart Action Center** provides HR with a centralized list of items requiring attention.
 
 ```text
 ┌─────────────────────────────────────┐
-│       SMART HR ACTION CENTER        │
+│        SMART ACTION CENTER          │
 ├─────────────────────────────────────┤
-│ 🔴 Critical              2          │
-│ 🟠 High                  5          │
-│ 🟡 Medium                7          │
+│ 🔴 Critical                         │
+│ 🟠 High                             │
+│ 🟡 Medium                           │
 ├─────────────────────────────────────┤
-│ 🔴 Salary Approval       REVIEW     │
-│ 🟠 Performance Warning   REVIEW     │
-│ 🟡 Leave Limit           VIEW       │
-│ 🟠 Attendance Issue      VIEW       │
-│ 🔴 Department Health     VIEW       │
+│ Salary Approval          REVIEW     │
+│ Performance Warning      REVIEW     │
+│ Leave Limit              VIEW       │
+│ Attendance Issue         VIEW       │
+│ Department Health        VIEW       │
 └─────────────────────────────────────┘
 ```
 
-### Action Types
+Supported action types include:
 
-- Leave approvals
-- Attendance issues
-- Absence warnings
-- Salary deduction approvals
-- Performance warnings
-- Compliance warnings
-- Department health warnings
+* Leave approvals
+* Attendance issues
+* Absence warnings
+* Salary deduction requests
+* Performance warnings
+* Compliance warnings
+* Department health warnings
 
 ---
 
 # 👤 Employee 360° View
 
-HR can view an employee's complete HR information from one place.
+HR can access a consolidated view of an employee.
 
 ### Profile
-- Name
-- Employee ID
-- Department
-- Role
-- Contact
-- Profile photo
+
+* Name
+* Employee ID
+* Department
+* Role
+* Contact
+* Profile photo
 
 ### Workforce
-- Attendance
-- Leave
-- Absence
-- Performance
-- Warnings
-- PIP
+
+* Attendance
+* Leave
+* Absence
+* Performance
+* Warnings
+* PIPs
 
 ### Financial
-- Salary deduction history
-- Approved deductions
+
+* Salary deduction history
+* Approved deductions
 
 ### Organization
-- Reporting manager
-- Department
-- Organizational position
+
+* Reporting manager
+* Department
+* Organizational position
 
 ### Timeline
-Complete history of important HR events.
+
+Important HR events can be viewed through an employee timeline.
 
 ---
 
@@ -402,57 +514,57 @@ Complete history of important HR events.
 
 Monitor workforce health by department.
 
-### Metrics
+Metrics include:
 
-- Employee count
-- Attendance rate
-- Absence rate
-- Leave activity
-- Late attendance
-- Warnings
-- Performance indicators
+* Employee count
+* Attendance rate
+* Absence rate
+* Leave activity
+* Late attendance
+* Warnings
+* Performance indicators
 
 ---
 
-# 🌳 Interactive Organizational Chart
+# 🌳 Organizational Chart
 
-Visualize reporting relationships using real organizational data.
+Visualize employee reporting relationships.
 
 ```text
-                  Department Head
-                         │
-              ┌──────────┴──────────┐
-              │                     │
-           Manager               Manager
-              │                     │
-        ┌─────┴─────┐         ┌─────┴─────┐
-        │           │         │           │
-    Employee    Employee  Employee    Employee
+                 Department Head
+                       │
+              ┌────────┴────────┐
+              │                 │
+           Manager           Manager
+              │                 │
+        ┌─────┴─────┐     ┌─────┴─────┐
+        │           │     │           │
+    Employee    Employee Employee    Employee
 ```
 
-### Features
+Features:
 
-- Expand / collapse
-- Department navigation
-- Reporting relationships
-- Employee details
+* Expand / collapse
+* Department navigation
+* Reporting relationships
+* Employee details
 
 ---
 
 # 📧 Notifications & Email
 
-Dayflow AI supports:
+The application supports HR notification workflows including:
 
-- Welcome emails
-- Leave approval
-- Leave rejection
-- Attendance warnings
-- Absence warnings
-- Performance warnings
-- Salary deduction notifications
-- HR action notifications
+* Welcome messages
+* Leave approval notifications
+* Leave rejection notifications
+* Attendance warnings
+* Absence warnings
+* Performance warnings
+* Salary-related notifications
+* HR action notifications
 
-### Dynamic Email Fields
+Email templates support dynamic fields such as:
 
 ```text
 {{employee_name}}
@@ -468,46 +580,23 @@ Dayflow AI supports:
 
 ---
 
-# ⚙️ Profile & Settings
-
-### Employee Editable
-
-- Email
-- Contact Number
-- Profile Photo
-
-### HR Controlled
-
-- Name
-- Employee ID
-- Department
-- Role
-
-Also includes:
-
-- 👤 Profile
-- 🚪 Logout
-
----
-
 # 🧾 Audit Trail
 
-Important HR actions are recorded.
+Important HR actions are recorded for traceability.
 
-### Tracks
+The audit system tracks events such as:
 
-- Employee changes
-- Leave approvals
-- Leave rejections
-- Attendance changes
-- Salary deduction approvals
-- Salary deduction rejections
-- Warning creation
-- Warning updates
-- Performance reviews
-- HR decisions
+* Employee changes
+* Leave approvals
+* Leave rejections
+* Attendance changes
+* Salary approval/rejection
+* Warning creation
+* Warning updates
+* Performance reviews
+* HR decisions
 
-Every important action answers:
+Every important action should answer:
 
 > **Who → What → When → Why**
 
@@ -519,192 +608,381 @@ Dayflow AI follows a **Human-in-the-Loop** approach.
 
 ### Access Control
 
-- Role-based permissions
-- Backend authorization
-- Employee data isolation
-- HR-only sensitive information
-- Protected routes
-- Audit logging
+* Role-based permissions
+* Protected API routes
+* Employee data isolation
+* HR-only sensitive operations
+* Session validation
+* Audit logging
 
-### 🛡️ Critical Principle
+### Responsible HR Intelligence
 
-> **AI recommends. HR decides.**
+```text
+AI
+ ↓
+RECOMMEND
+ ↓
+EXPLAIN
+ ↓
+HR REVIEW
+ ↓
+DECISION
+ ↓
+ACTION
+```
 
-The system must never independently:
+> 🛡️ **AI recommends. HR decides.**
 
-- ❌ Terminate an employee
-- ❌ Reduce salary
-- ❌ Declare an employee guilty
-- ❌ Apply disciplinary punishment
+The system is designed so that sensitive HR actions require authorized review rather than unrestricted automated decision-making.
 
-Sensitive actions require authorized HR review and approval.
+---
+
+# 🏗️ Architecture
+
+```text
+┌─────────────────────────────────────────────┐
+│                  FRONTEND                   │
+│                                             │
+│        React + TypeScript + Vite            │
+│                                             │
+│  HR Dashboard • Employee Dashboard          │
+│  Attendance • Leave • Warnings • PIP        │
+└──────────────────────┬──────────────────────┘
+                       │
+                       │ REST API
+                       ↓
+┌─────────────────────────────────────────────┐
+│                  BACKEND                    │
+│                                             │
+│             Express + TypeScript            │
+│                                             │
+│ Authentication • HR APIs • Audit • Actions  │
+└───────────────┬─────────────────┬───────────┘
+                │                 │
+                ↓                 ↓
+      ┌─────────────────┐   ┌────────────────┐
+      │ Dayflow Data    │   │  Gemini AI     │
+      │                 │   │                │
+      │ JSON Persistence│   │ Workforce      │
+      │                 │   │ Intelligence   │
+      └─────────────────┘   └────────────────┘
+```
 
 ---
 
 # 🛠️ Technology Stack
 
-| Layer | Technology |
-|---|---|
-| Platform | Odoo |
-| Backend | Python |
-| Framework | Odoo ORM |
-| Frontend | OWL / JavaScript |
-| UI | HTML / CSS |
-| Database | PostgreSQL |
-| HR | Odoo HR Ecosystem |
-| Intelligence | Explainable Rule-Based Analysis |
+| Layer            | Technology                    |
+| ---------------- | ----------------------------- |
+| Frontend         | React 19                      |
+| Language         | TypeScript 5.8                |
+| Build Tool       | Vite 6                        |
+| Backend          | Express 4                     |
+| Runtime          | Node.js / TypeScript          |
+| AI               | Google Gemini API             |
+| Charts           | Recharts                      |
+| UI Icons         | Lucide React                  |
+| Animation        | Motion                        |
+| Styling          | CSS / Tailwind tooling        |
+| Data Persistence | JSON file (`dayflow_db.json`) |
+| API              | REST                          |
 
-### Odoo Integration
-
-- `hr`
-- `hr_attendance`
-- `hr_holidays`
-- Payroll / HR modules
+> **Important:** The current repository is a standalone React/Express application. It does **not** currently contain an Odoo module structure, Python Odoo models, or PostgreSQL configuration.
 
 ---
 
 # 📁 Project Structure
 
 ```text
-dayflow-ai-—-hr-management-system/
+dayflow-ai-hr-management-system/
 │
-├── metadata.json
-├── package.json
-├── server.ts
-├── index.html
-├── vite.config.ts
-├── tsconfig.json
-├── bun.lock
-├── .env.example
-├── .gitignore
-├── README.md
+├── 📄 metadata.json
+├── 📄 package.json
+├── 📄 server.ts
+├── 📄 index.html
+├── 📄 vite.config.ts
+├── 📄 tsconfig.json
+├── 📄 bun.lock
+├── 📄 .env.example
+├── 📄 .gitignore
+├── 📄 README.md
 │
-├── assets/
-│   └── .aistudio/
+├── 📁 assets/
+│   └── 📁 .aistudio/
 │       └── .gitignore
 │
-└── src/
-    ├── main.tsx
-    ├── App.tsx
-    ├── api.ts
-    ├── types.ts
-    ├── index.css
+└── 📁 src/
     │
-    ├── context/
-    │   └── AuthContext.tsx
+    ├── 📄 main.tsx
+    ├── 📄 App.tsx
+    ├── 📄 api.ts
+    ├── 📄 types.ts
+    ├── 📄 index.css
     │
-    └── components/
+    ├── 📁 context/
+    │   └── 📄 AuthContext.tsx
+    │
+    └── 📁 components/
         │
-        ├── auth/
-        │   └── LoginPage.tsx
+        ├── 📁 auth/
+        │   └── 📄 LoginPage.tsx
         │
-        ├── common/
-        │   ├── Header.tsx
-        │   ├── Sidebar.tsx
-        │   └── EmailModal.tsx
+        ├── 📁 common/
+        │   ├── 📄 Header.tsx
+        │   ├── 📄 Sidebar.tsx
+        │   └── 📄 EmailModal.tsx
         │
-        ├── hr/
-        │   ├── HRDashboard.tsx
-        │   ├── EmployeeManagement.tsx
-        │   ├── OrgChart.tsx
-        │   ├── DepartmentManagement.tsx
-        │   ├── AttendanceManagement.tsx
-        │   ├── LeaveManagement.tsx
-        │   ├── AbsenceMonitoring.tsx
-        │   ├── SalaryDeductionRequests.tsx
-        │   ├── WorkforceIntelligence.tsx
-        │   ├── HRNotificationCenter.tsx
-        │   ├── AuditTrailView.tsx
-        │   ├── HRProfile.tsx
-        │   ├── SmartActionCenter.tsx
-        │   ├── WarningManagement.tsx
-        │   └── Employee360Modal.tsx
+        ├── 📁 hr/
+        │   ├── 📄 HRDashboard.tsx
+        │   ├── 📄 EmployeeManagement.tsx
+        │   ├── 📄 OrgChart.tsx
+        │   ├── 📄 DepartmentManagement.tsx
+        │   ├── 📄 AttendanceManagement.tsx
+        │   ├── 📄 LeaveManagement.tsx
+        │   ├── 📄 AbsenceMonitoring.tsx
+        │   ├── 📄 SalaryDeductionRequests.tsx
+        │   ├── 📄 WorkforceIntelligence.tsx
+        │   ├── 📄 HRNotificationCenter.tsx
+        │   ├── 📄 AuditTrailView.tsx
+        │   ├── 📄 HRProfile.tsx
+        │   ├── 📄 SmartActionCenter.tsx
+        │   ├── 📄 WarningManagement.tsx
+        │   └── 📄 Employee360Modal.tsx
         │
-        └── employee/
-            ├── EmployeeDashboard.tsx
-            ├── EmployeeAttendance.tsx
-            ├── EmployeeLeaves.tsx
-            ├── EmployeeAbsenceDeductions.tsx
-            ├── EmployeeProfile.tsx
-            ├── EmployeeNotifications.tsx
-            └── EmployeePerformanceWarnings.tsx```
+        └── 📁 employee/
+            ├── 📄 EmployeeDashboard.tsx
+            ├── 📄 EmployeeAttendance.tsx
+            ├── 📄 EmployeeLeaves.tsx
+            ├── 📄 EmployeeAbsenceDeductions.tsx
+            ├── 📄 EmployeeProfile.tsx
+            ├── 📄 EmployeeNotifications.tsx
+            └── 📄 EmployeePerformanceWarnings.tsx
+```
 
 ---
 
-# 🚀 Installation
+# 🚀 Getting Started
 
-### 1. Clone Repository
+## 1. Clone the repository
 
 ```bash
 git clone <your-repository-url>
-cd <your-project-directory>
+cd dayflow-ai-hr-management-system
 ```
 
-### 2. Configure Odoo
+## 2. Install dependencies
 
-Install the required Odoo dependencies and configure PostgreSQL.
-
-### 3. Install Dayflow AI
-
-Place the module inside the Odoo addons directory.
-
-### 4. Update Module
+Using npm:
 
 ```bash
-./odoo-bin -u dayflow_ai -d <database_name>
+npm install
 ```
 
-### 5. Start Odoo
+Or using Bun:
 
 ```bash
-./odoo-bin -d <database_name>
+bun install
 ```
-
-Open the Odoo web interface and log in.
 
 ---
 
-# 🧪 Testing
+## 3. Configure environment variables
+
+Create a `.env` file in the project root.
+
+```env
+GEMINI_API_KEY=your_gemini_api_key
+APP_URL=http://localhost:3000
+```
+
+### Environment variables
+
+| Variable         | Required  | Description                                  |
+| ---------------- | --------- | -------------------------------------------- |
+| `GEMINI_API_KEY` | Optional* | Enables Gemini-powered intelligence features |
+| `APP_URL`        | Optional  | Application URL used by the server           |
+
+* The application can initialize without a Gemini key, but Gemini-powered analysis requires it.
+
+---
+
+## 4. Start the application
+
+```bash
+npm run dev
+```
+
+The application runs on:
+
+```text
+http://localhost:3000
+```
+
+---
+
+# 📦 Production Build
+
+Build both the frontend and backend:
+
+```bash
+npm run build
+```
+
+Start the production server:
+
+```bash
+npm start
+```
+
+---
+
+# 🧪 Development Commands
+
+| Command           | Description                   |
+| ----------------- | ----------------------------- |
+| `npm run dev`     | Start development server      |
+| `npm run build`   | Build frontend and backend    |
+| `npm start`       | Start production server       |
+| `npm run preview` | Preview Vite production build |
+| `npm run lint`    | Run TypeScript validation     |
+| `npm run clean`   | Remove generated build files  |
+
+---
+
+# 🔌 API Modules
+
+The backend exposes REST endpoints for major HR workflows.
 
 ### Authentication
-- HR Login
-- Employee Login
-- Invalid Login
-- Role-Based Redirect
-- Secure Logout
-- Protected Routes
+
+```text
+POST /api/auth/login
+POST /api/auth/logout
+GET  /api/auth/me
+```
+
+### Employees
+
+```text
+GET    /api/employees
+POST   /api/employees
+GET    /api/employees/:id
+PUT    /api/employees/:id
+DELETE /api/employees/:id
+```
+
+### Attendance
+
+```text
+GET  /api/attendance
+POST /api/attendance/check-in
+POST /api/attendance/check-out
+POST /api/attendance/record
+```
+
+### Leave
+
+```text
+GET  /api/leaves
+POST /api/leaves
+GET  /api/leaves/balance/:employeeId
+POST /api/leaves/:id/review
+```
+
+### Workforce Intelligence
+
+```text
+GET  /api/workforce-intelligence
+POST /api/workforce-intelligence/ai-analyze
+```
+
+### Warnings
+
+```text
+GET  /api/warnings
+POST /api/warnings
+PUT  /api/warnings/:id
+POST /api/warnings/auto-detect
+```
+
+### Performance
+
+```text
+GET  /api/performance-reviews
+POST /api/performance-reviews
+GET  /api/pips
+POST /api/pips
+```
+
+### HR Action Center
+
+```text
+GET  /api/action-center
+POST /api/action-center/:id/status
+POST /api/action-center/:id/dismiss
+POST /api/action-center/reset
+```
+
+### Audit
+
+```text
+GET /api/audit-logs
+```
+
+---
+
+# 🧪 Testing Checklist
+
+### Authentication
+
+* [ ] HR/Admin login
+* [ ] Employee login
+* [ ] Invalid login
+* [ ] Role-based redirect
+* [ ] Logout
+* [ ] Protected API routes
 
 ### Employee Management
-- Employee Creation
-- Profile Update
-- HR-Controlled Fields
-- Employee-Controlled Fields
-- Employee Search
 
-### Attendance & Leave
-- Check-In
-- Check-Out
-- Attendance Tracking
-- Leave Application
-- Leave Approval
-- Leave Rejection
-- Absence Warning
+* [ ] Create employee
+* [ ] Update employee
+* [ ] Employee profile editing
+* [ ] HR-controlled fields
+* [ ] Employee search
+* [ ] Employee filtering
 
-### Salary
-- Deduction Calculation
-- HR Approval
-- HR Rejection
-- Payroll Workflow
-- Employee Notification
-- Audit Trail
+### Attendance
 
-### Workforce Management
-- Warning Generation
-- Explainable Warnings
-- Department Health
-- Smart Action Center
-- Performance Warning
-- Compliance Warning
+* [ ] Check-in
+* [ ] Check-out
+* [ ] Attendance records
+* [ ] Working hours
+* [ ] Late attendance
+* [ ] Absence detection
+
+### Leave
+
+* [ ] Leave application
+* [ ] Leave balance
+* [ ] Leave approval
+* [ ] Leave rejection
+* [ ] Leave history
+
+### Workforce Intelligence
+
+* [ ] Workforce analysis
+* [ ] Risk detection
+* [ ] Warning generation
+* [ ] Explainable insights
+* [ ] Department health
+
+### Salary Workflow
+
+* [ ] Deduction calculation
+* [ ] HR approval
+* [ ] HR rejection
+* [ ] Employee notification
+* [ ] Audit record
 
 ---
 
@@ -729,7 +1007,7 @@ ANALYZE
   ↓
 EXPLAIN
   ↓
-ALERT
+DETECT
   ↓
 RECOMMEND
   ↓
@@ -742,46 +1020,51 @@ ACT
 AUDIT
 ```
 
-Dayflow AI transforms HR from a **data management system** into an **action-oriented HR platform**.
+Dayflow AI aims to transform HR from a **data management system** into an **action-oriented workforce intelligence platform**.
 
 ---
 
-# 🎯 Project Vision
+# 🔮 Future Roadmap
 
-Build a smarter HR ecosystem where workforce data becomes **explainable intelligence** and **responsible action**.
+* [ ] Native Odoo 17 module integration
+* [ ] PostgreSQL production database
+* [ ] Advanced workforce risk scoring
+* [ ] More AI-powered HR insights
+* [ ] Advanced analytics dashboards
+* [ ] Real-time notifications
+* [ ] Production-grade email service
+* [ ] Automated deployment
+* [ ] Comprehensive automated testing
+* [ ] Enhanced audit and compliance controls
 
-```text
-HR Management
-      +
-Workforce Intelligence
-      +
-Explainable Warnings
-      +
-Controlled Automation
-      +
-Human Approval
-      +
-Auditability
-      │
-      ▼
-┌───────────────────────────┐
-│       DAYFLOW AI          │
-│ Unified HR Intelligence   │
-└───────────────────────────┘
+---
+
+# 🤝 Contributing
+
+Contributions are welcome.
+
+```bash
+git checkout -b feature/your-feature
 ```
 
+Make your changes, test them, and open a pull request.
+
 ---
 
-# 🏅 Hackathon
+# 👥 Team
 
-**Odoo Hackathon**
+## Byte Builders
 
-### 👥 Team — Byte Builders
-
-| Role | Member |
-|---|---|
+| Role           | Member            |
+| -------------- | ----------------- |
 | 👑 Team Leader | DHARANEESHWARAN.M |
-| 💻 Team Member | Mohan Kumar |
+| 💻 Team Member | Mohan Kumar       |
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
 
 ---
 
@@ -789,10 +1072,12 @@ Auditability
 
 ## 🚀 Dayflow AI
 
-**Human Resource Management System**
+### Workforce Risk & HR Intelligence
 
-*Intelligent • Explainable • Action-Oriented*
+**Intelligent • Explainable • Action-Oriented**
 
-**Built by Byte Builders for the Odoo Hackathon**
+> **AI recommends. HR decides.**
+
+**Built by Byte Builders**
 
 </div>
